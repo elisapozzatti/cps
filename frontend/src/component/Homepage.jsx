@@ -40,6 +40,8 @@ function Homepage() {
               <h4
                 style={{
                   fontFamily: "Kyiv*Type Serif",
+                  marginTop: "40px",
+                  marginLeft: "10px",
                 }}
               >
                 è una cooperativa nata del 2001 dalla fusione di tre cooperative
@@ -53,33 +55,104 @@ function Homepage() {
               style={{
                 fontFamily: "Kyiv*Type Serif",
                 color: "#1C1463",
+                marginBottom: "10px",
               }}
             >
               SERVIZI DI CPS:
             </h3>
-            <p
-              style={{
-                fontFamily: "Kyiv*Type Serif",
-              }}
-            >
-              •Servizio di fecondazione artificiale a cura dei propri veterinari
-              associati con o senza fornitura seme. •Redazione piani di
-              accoppiamento tradizionali e genomici. •Prelievi biologici per
-              test genomici e conseguente elaborazione e presentazione dei
-              risultati. •Assistenza zooiatrica a cura dei veterinari soci.
-              •Fornitura e formazione all’uso dei più innovativi sistemi di
-              monitoraggio della mandria. •Fornitura e installazione di igloo
-              per singoli o gruppi di vitelli che garantiscono comfort e
-              benessere al giovane bestiame. •Consulenza e prodotti per
-              un’efficace strategia di controllo delle mosche in allavamento.
-              •Fornitura e formazione all’uso di software dedicati per la
-              gestione della vostra azienda. •Consulenza in materia di
-              sicurezza, fornitura e installazione di cartellonistica, estintori
-              ed altri presidi per la gestione dei rischi, nonchè redazione del
-              DVR. •Tramite CPS è possibile anche accedere a tutta la gamma di
-              servizi specialistici offerti dalla partner A.V.A. (metti link su
-              ava per info)
-            </p>
+            <div>
+              <p
+                style={{
+                  fontFamily: "Kyiv*Type Serif",
+                  margin: "3px",
+                }}
+              >
+                •Servizio di fecondazione artificiale a cura dei propri
+                veterinari associati con o senza fornitura seme.
+              </p>
+              <p
+                style={{
+                  fontFamily: "Kyiv*Type Serif",
+                  margin: "3px",
+                }}
+              >
+                •Redazione piani di accoppiamento tradizionali e genomici.
+              </p>
+              <p
+                style={{
+                  fontFamily: "Kyiv*Type Serif",
+                  margin: "3px",
+                }}
+              >
+                •Prelievi biologici per test genomici e conseguente elaborazione
+                e presentazione dei risultati.
+              </p>
+              <p
+                style={{
+                  fontFamily: "Kyiv*Type Serif",
+                  margin: "3px",
+                }}
+              >
+                •Assistenza zooiatrica a cura dei veterinari soci.
+              </p>
+              <p
+                style={{
+                  fontFamily: "Kyiv*Type Serif",
+                  margin: "3px",
+                }}
+              >
+                •Fornitura e formazione all’uso dei più innovativi sistemi di
+                monitoraggio della mandria.
+              </p>
+              <p
+                style={{
+                  fontFamily: "Kyiv*Type Serif",
+                  margin: "3px",
+                }}
+              >
+                •Fornitura e installazione di igloo per singoli o gruppi di
+                vitelli che garantiscono comfort e benessere al giovane
+                bestiame.
+              </p>
+              <p
+                style={{
+                  fontFamily: "Kyiv*Type Serif",
+                  margin: "3px",
+                }}
+              >
+                •Consulenza e prodotti per un’efficace strategia di controllo
+                delle mosche in allavamento.
+              </p>
+              <p
+                style={{
+                  fontFamily: "Kyiv*Type Serif",
+                  margin: "3px",
+                }}
+              >
+                •Fornitura e formazione all’uso di software dedicati per la
+                gestione della vostra azienda.
+              </p>
+              <p
+                style={{
+                  fontFamily: "Kyiv*Type Serif",
+                  margin: "3px",
+                }}
+              >
+                •Consulenza in materia di sicurezza, fornitura e installazione
+                di cartellonistica, estintori ed altri presidi per la gestione
+                dei rischi, nonchè redazione del DVR.
+              </p>
+              <p
+                style={{
+                  fontFamily: "Kyiv*Type Serif",
+                  margin: "3px",
+                }}
+              >
+                •Tramite CPS è possibile anche accedere a tutta la gamma di
+                servizi specialistici offerti dalla partner A.V.A. (metti link
+                su ava per info)
+              </p>
+            </div>
           </div>
         </div>
       </div>

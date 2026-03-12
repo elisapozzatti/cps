@@ -1,5 +1,10 @@
 .containerHome {
   background-image: url("sfondo.svg");
+  width: 100%;
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .containerBody {
@@ -10,6 +15,7 @@
   display: flex;
   flex-direction: column;
   width: 50%;
+  padding: 20px;
 }
 
 .cow {
@@ -19,17 +25,18 @@
 
 .text {
   display: flex;
-  align-items: start;
-  justify-content: flex-start;
+  align-items: flex-start;
 }
 
 .services {
   background-color: rgba(247, 148, 31, 0.1);
   border-radius: 20px;
-  padding: 0 20px 0 20px;
+  padding: 0 20px 20px 20px;
   margin-left: 10px 10px 0 auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin: 20px;
+  max-width: 40vw;
 }
