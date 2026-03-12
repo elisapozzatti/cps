@@ -1,0 +1,35 @@
+.containerHome {
+  background-image: url("sfondo.svg");
+}
+
+.containerBody {
+  display: flex;
+}
+
+.containerBio {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.cow {
+  height: 200px;
+  width: 200px;
+}
+
+.text {
+  display: flex;
+  align-items: start;
+  justify-content: flex-start;
+}
+
+.services {
+  background-color: rgba(247, 148, 31, 0.1);
+  border-radius: 20px;
+  padding: 0 20px 0 20px;
+  margin-left: 10px 10px 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
