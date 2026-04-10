@@ -9,10 +9,23 @@
 
 .containerBody {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  height: 65vh;
+}
+
+.containerBioText {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
 }
 
 .containerBio {
   display: flex;
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
   width: 50%;
   padding: 20px;
@@ -21,22 +34,33 @@
 .cow {
   height: 200px;
   width: 200px;
+  margin: 0;
 }
 
 .text {
   display: flex;
   align-items: flex-start;
+  margin-top: 0;
+  padding-top: 0;
 }
 
 .services {
   background-color: rgba(247, 148, 31, 0.1);
   border-radius: 20px;
   padding: 0 20px 20px 20px;
-  margin-left: 10px 10px 0 auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   margin: 20px;
   max-width: 40vw;
+}
+
+.vociMenu {
+  color: #1c1463;
+  margin-left: 10px;
+}
+
+.vociMenu:hover {
+  color: #e14a2b;
 }

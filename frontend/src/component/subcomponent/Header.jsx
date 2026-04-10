@@ -1,4 +1,14 @@
+import { Link } from "react-router-dom";
+import { useState } from "react";
+import "../Homepage.css";
+
 function Header({ page, color }) {
+  const [menu, setMenu] = useState(false);
+
+  const HandleMenu = () => {
+    setMenu(!menu);
+  };
+
   return (
     <>
       <div
@@ -103,6 +113,7 @@ function Header({ page, color }) {
             width: "30px",
             marginRight: "auto",
           }}
+          onClick={HandleMenu}
         ></img>
         <h5
           style={{
@@ -133,15 +144,151 @@ function Header({ page, color }) {
               width: "20px",
             }}
           ></img>
-          <img
-            src="user.svg"
-            style={{
-              height: "20px",
-              width: "20px",
-            }}
-          ></img>
+          <Link to="/login">
+            <img
+              src="user.svg"
+              style={{
+                height: "20px",
+                width: "20px",
+              }}
+            ></img>
+          </Link>
         </div>
       </div>
+      {menu && (
+        <div
+          style={{
+            display: "flex",
+            flexDirection: "column",
+            justifyContent: "center",
+            alignItems: "flex-start",
+            padding: "20px",
+            backgroundColor: "white",
+            width: "20vh",
+            height: "25vh",
+            position: "absolute",
+            top: "11vh",
+            left: "1px",
+            borderRadius: "10%",
+            border: "2px solid #1C1463",
+            paddingRight: "20px",
+            gap: "10px",
+          }}
+        >
+          <img
+            src="menu.svg"
+            style={{
+              width: "30px",
+              height: "30px",
+            }}
+            onClick={HandleMenu}
+          ></img>
+          <Link
+            to="/"
+            style={{
+              textDecoration: "none",
+              fontFamily: "Kyiv*Type Serif",
+            }}
+            className="vociMenu"
+          >
+            HOME
+          </Link>
+          <Link
+            to="/products"
+            style={{
+              textDecoration: "none",
+              fontFamily: "Kyiv*Type Serif",
+            }}
+            className="vociMenu"
+          >
+            PRODOTTI
+          </Link>
+          <Link
+            to="/aboutus"
+            style={{
+              textDecoration: "none",
+              fontFamily: "Kyiv*Type Serif",
+            }}
+            className="vociMenu"
+          >
+            CHI SIAMO
+          </Link>
+          <Link
+            to="/news"
+            style={{
+              textDecoration: "none",
+              fontFamily: "Kyiv*Type Serif",
+            }}
+            className="vociMenu"
+          >
+            NEWS
+          </Link>
+          <Link
+            to="/contacts"
+            style={{
+              textDecoration: "none",
+              fontFamily: "Kyiv*Type Serif",
+            }}
+            className="vociMenu"
+          >
+            CONTATTI
+          </Link>
+          <div
+            style={{
+              display: "flex",
+              justifyContent: "center",
+              marginTop: "10px",
+            }}
+          >
+            <Link to="https://www.instagram.com/cps_coop/">
+              <img
+                src="instagram.svg"
+                style={{
+                  width: "20px",
+                  height: "20px",
+                }}
+                className="vociMenu"
+              ></img>
+            </Link>
+            <Link to="https://www.facebook.com/CPS.Veneto/">
+              <img
+                src="facebook.svg"
+                style={{
+                  width: "20px",
+                  height: "20px",
+                }}
+                className="vociMenu"
+              />
+            </Link>
+          </div>
+          <div
+            style={{
+              display: "flex",
+              justifyContent: "center",
+              gap: "5px",
+            }}
+          >
+            <Link
+              to="/privacy"
+              style={{
+                fontFamily: "Kyiv*Type Serif",
+                fontSize: "7px",
+              }}
+            >
+              Informativa privacy
+            </Link>
+            <Link
+              to="/cookie"
+              style={{
+                fontFamily: "Kyiv*Type Serif",
+                fontSize: "7px",
+              }}
+            >
+              Informativa cookie
+            </Link>
+          </div>
+        </div>
+      )}
     </>
   );
 }

@@ -1,53 +1,72 @@
 import "./Homepage.css";
 import Header from "../component/subcomponent/Header";
+import Footer from "../component/subcomponent/Footer";
+import { useState } from "react";
 
 function Homepage() {
+  const [rotate, setRotate] = useState(false);
+
+  const handleRotate = () => {
+    setRotate(!rotate);
+  };
   return (
     <>
       <div className="containerHome">
         <Header page="HOME" color="#1C1463"></Header>
         <div className="containerBody">
-          <div className="containerBio">
-            <img src="mucca.svg" className="cow"></img>
-            <div className="text">
-              <h3
+          <div className="containerBioText">
+            <div className="containerBio">
+              <img
+                src="mucca.png"
+                className="cow"
+                onClick={handleRotate}
                 style={{
-                  color: "#E14A2B",
-                  fontSize: "30px",
-                  fontFamily: "Kyiv*Type Serif",
+                  transform: rotate ? "rotate(360deg)" : "rotate(0deg)",
+                  transition: "transform 2s ease",
                 }}
-              >
-                C
-              </h3>
-              <h3
-                style={{
-                  color: "#F7941F",
-                  fontSize: "30px",
-                  fontFamily: "Kyiv*Type Serif",
-                }}
-              >
-                P
-              </h3>
-              <h3
-                style={{
-                  color: "#1C1463",
-                  fontSize: "30px",
-                  fontFamily: "Kyiv*Type Serif",
-                }}
-              >
-                S
-              </h3>
-              <h4
-                style={{
-                  fontFamily: "Kyiv*Type Serif",
-                  marginTop: "40px",
-                  marginLeft: "10px",
-                }}
-              >
-                è una cooperativa nata del 2001 dalla fusione di tre cooperative
-                che operavano nel campo dei servizi zootecnici, ambientali e
-                commerciali
-              </h4>
+              ></img>
+              <div className="text">
+                <h3
+                  style={{
+                    color: "#E14A2B",
+                    fontSize: "30px",
+                    fontFamily: "Kyiv*Type Serif",
+                    margin: "0",
+                  }}
+                >
+                  C
+                </h3>
+                <h3
+                  style={{
+                    color: "#F7941F",
+                    fontSize: "30px",
+                    fontFamily: "Kyiv*Type Serif",
+                    margin: "0",
+                  }}
+                >
+                  P
+                </h3>
+                <h3
+                  style={{
+                    color: "#1C1463",
+                    fontSize: "30px",
+                    fontFamily: "Kyiv*Type Serif",
+                    margin: "0",
+                  }}
+                >
+                  S
+                </h3>
+                <h4
+                  style={{
+                    fontFamily: "Kyiv*Type Serif",
+                    margin: "5px 0 0 5px",
+                  }}
+                >
+                  è una cooperativa nata del 2001 dalla fusione di tre
+                  cooperative che operavano nel campo dei servizi zootecnici,
+                  ambientali e commerciali
+                </h4>
+              </div>
             </div>
           </div>
           <div className="services">
@@ -155,6 +174,7 @@ function Homepage() {
             </div>
           </div>
         </div>
+        <Footer></Footer>
       </div>
     </>
   );

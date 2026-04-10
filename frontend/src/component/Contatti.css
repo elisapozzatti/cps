@@ -1,0 +1,89 @@
+.containerContatti {
+  background-image: url("sfondo.svg");
+  width: 100%;
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.containerBodyContatti {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  gap: 20px;
+}
+
+.divPersone {
+  background-color: rgba(225, 74, 43, 0.1);
+  border-radius: 20px;
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 20px;
+  max-width: 50vw;
+  overflow-y: auto;
+  max-height: 70vh;
+  gap: 10px;
+  scrollbar-width: 1px;
+  -ms-overflow-style: none;
+}
+
+.persona {
+  display: flex;
+  gap: 5px;
+  margin: 5px;
+  border: 1px solid #e14a2b;
+  padding: 10px;
+  border-radius: 20px;
+  width: 200px;
+}
+
+.dati {
+  display: flex;
+  flex-direction: column;
+}
+
+.divForm {
+  width: 35%;
+  background: rgba(200, 200, 220, 0.6);
+  padding: 25px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.divForm input,
+.divForm select,
+.divForm textarea {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  width: 90%;
+}
+
+.divForm textarea {
+  min-height: 100px;
+  resize: none;
+}
+
+.privacy {
+  display: flex;
+  gap: 5px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.buttons button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #1c1463;
+  color: white;
+  cursor: pointer;
+}
